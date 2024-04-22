@@ -14,10 +14,16 @@ Visualizzazione dinamica dei messaggi: tramite la direttiva v-for, visualizzare 
 > Milestone 1
 - [X] Creare la struttura dati con i contatti 
 - [X] Avere il codice HTML per un singolo contattato sul quale verrà applicato il v-for
+> Milestone 2
+- [X] Aggiornare la struttura dati con i messaggi che ogni utente può inviare a noi
+- [X] Creare una variabile per salvare l'indice dell'utente attivo
 
 ### LOGICA
 > Milestone 1
 - [X] Eseguire un v-for per ogni contatto e estrarre l'oggetto corrente con indice
 - [X] Stampare dentro gli oggetti i dati corretti attraerso l'indice e la corretta estrapolazione dei dati dalla struttura dati
+> Milestone 2
+- [X] Stampare nome e immagine profilo dell'utente selezionato nella chat
+- [] Stampare messaggi dell'utente selezionato nella chat
 
 ### OUTPUT

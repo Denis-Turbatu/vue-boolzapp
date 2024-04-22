@@ -16,7 +16,6 @@
   </head>
   <body>
     <div id="app">
-      {{ prova }}
       <!-- WebApp -->
       <div class="webapp-container flex">
         <!-- left container -->
@@ -56,20 +55,26 @@
           </div>
           <!-- contacts -->
           <div class="contacts">
-            <div class="contact chat-img flex flex-vertical-center" v-for="(curContact, index) in contacts">
+            <div 
+              class="contact chat-img flex flex-vertical-center" 
+              v-for="(curContact, index) in contacts"
+              @click="selectedChat(curContact, index)"
+            >
               <img 
                 draggable="false" 
                 alt="" 
-                :src="`./assets/img/avatar${contacts[index].imgProfilo}.jpg`" 
+                :src="`./assets/img/avatar${contacts[index].avatar}.jpg`" 
               />
               <div class="contact-message">
                 <div class="top-message">
-                  <span>  {{ contacts[index].nome }} </span>
+                  <span>  {{ contacts[index].name }} </span>
                   <span>16:26</span>
                 </div>
                 <p>Lorem ipsum dolor sit amet</p>
               </div>
             </div>
+
+
             <!-- <div class="contact chat-img flex flex-vertical-center">
               <img draggable="false" src="./assets/img/avatar_2.jpg" alt="" />
               <div class="contact-message">
@@ -148,12 +153,18 @@
           <!-- chat-user -->
           <div class="chat-user flex">
             <!-- img-user -->
-            <div class="user chat-img flex flex-vertical-center">
-              <img draggable="false" src="./assets/img/avatar_1.jpg" alt="" />
+            <div 
+              class="user chat-img flex flex-vertical-center"
+            >
+              <img 
+                draggable="false"  
+                :src="`./assets/img/avatar${contacts[chatActive].avatar}.jpg`" alt="" />
             </div>
             <!-- description-user -->
             <div class="user-chat-description flex column flex-vertical-center">
-              <h4>Michele</h4>
+              <h4>
+                {{contacts[chatActive].name}}
+              </h4>
               <p>Ultimo accesso oggi alle 16:26</p>
             </div>
             <!-- icons -->
@@ -165,7 +176,7 @@
           </div>
           <!-- messagges -->
           <div class="messages flex">
-            <div class="row flex right">
+            <!-- <div class="row flex right">
               <div class="self-message flex">
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
@@ -211,21 +222,13 @@
                   <span>16:27</span>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="row flex left">
               <div class="user-message flex">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
-                  quidem accusantium cupiditate, dolores deserunt doloremque fuga
-                  assumenda. Dicta eos voluptatum et nesciunt maxime aspernatur
-                  corporis aliquam expedita. Eaque, quis vel. Excepturi in amet
-                  sed dolorem impedit consectetur! Ea iure amet similique
-                  quibusdam rem accusamus aperiam eaque consequatur ullam harum
-                  saepe, aspernatur temporibus soluta aut dolorum? Velit dolorem
-                  provident ullam vel. Nobis iure similique blanditiis, a nihil
-                  vitae sunt aspernatur deleniti totam delectus eveniet dolorem?
-                  Quos voluptas, dolores quas nostrum voluptates molestias fuga
-                  quo, ex ab reprehenderit saepe odio perferendis placeat!
+                <p
+                  v-for="(curMessage, index) in messages"
+                >
+                  {{ contacts[0].messages[0].message }}
                 </p>
                 <div class="info-message flex">
                   <div class="chevron">
