@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>Boolzapp</title>
+  </head>
+  <body>
+    <div id="app">
+      {{ prova }}
+      <!-- WebApp -->
+      <div class="webapp-container flex">
+        <!-- left container -->
+        <div class="left-container">
+          <!-- user-settings -->
+          <div class="user-settings">
+            <div class="chat-img flex flex-vertical-center">
+              <img
+                draggable="false"
+                src="./assets/img/avatar_io.jpg"
+                alt="profile-img"
+              />
+              <!-- icons -->
+              <div class="action-icons user-actions">
+                <a href=""><i class="fa-solid fa-circle-notch"></i></a>
+                <a href=""><i class="fa-solid fa-message"></i></a>
+                <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- notifications -->
+          <div class="notifications flex flex-vertical-center">
+            <div class="circle-notification">
+              <i class="fa-solid fa-bell-slash"></i>
+            </div>
+            <div class="active-notification">
+              <h4>Ricevi notifiche di nuovi messaggi</h4>
+              <a href="">Attiva notifiche desktop</a>
+            </div>
+          </div>
+          <!-- search-bar -->
+          <div class="search-bar action-bar">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </div>
+            <input type="text" placeholder="Cerca o inzia una nuova chat" />
+          </div>
+          <!-- contacts -->
+          <div class="contacts">
+            <div class="contact chat-img flex flex-vertical-center">
+              <img draggable="false" src="./assets/img/avatar_1.jpg" alt="" />
+              <div class="contact-message">
+                <div class="top-message">
+                  <span>Michele</span>
+                  <span>16:26</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+            <div class="contact chat-img flex flex-vertical-center">
+              <img draggable="false" src="./assets/img/avatar_2.jpg" alt="" />
+              <div class="contact-message">
+                <div class="top-message">
+                  <span>Fabio</span>
+                  <span>16:05</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+            <div class="contact chat-img flex flex-vertical-center">
+              <img draggable="false" src="./assets/img/avatar_3.jpg" alt="" />
+              <div class="contact-message">
+                <div class="top-message">
+                  <span>Samuele</span>
+                  <span>16:03</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+            <div class="contact chat-img flex flex-vertical-center">
+              <img draggable="false" src="./assets/img/avatar_4.jpg" alt="" />
+              <div class="contact-message">
+                <div class="top-message">
+                  <span>Alessandro B.</span>
+                  <span>15:50</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+            <div class="contact chat-img flex flex-vertical-center">
+              <img draggable="false" src="./assets/img/avatar_5.jpg" alt="" />
+              <div class="contact-message">
+                <div class="top-message">
+                  <span>Alessandro L.</span>
+                  <span>15:45</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+            <div class="contact chat-img flex flex-vertical-center">
+              <img draggable="false" src="./assets/img/avatar_6.jpg" alt="" />
+              <div class="contact-message">
+                <div class="top-message">
+                  <span>Claudia</span>
+                  <span>15:40</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+            <div class="contact chat-img flex flex-vertical-center">
+              <img draggable="false" src="./assets/img/avatar_7.jpg" alt="" />
+              <div class="contact-message">
+                <div class="top-message">
+                  <span>Federico</span>
+                  <span>15:20</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+            <div class="contact chat-img flex flex-vertical-center">
+              <img draggable="false" src="./assets/img/avatar_8.jpg" alt="" />
+              <div class="contact-message">
+                <div class="top-message">
+                  <span>Davide</span>
+                  <span>15:15</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- left container -->
+        <!-- right container -->
+        <div class="right-container">
+          <!-- chat-user -->
+          <div class="chat-user flex">
+            <!-- img-user -->
+            <div class="user chat-img flex flex-vertical-center">
+              <img draggable="false" src="./assets/img/avatar_1.jpg" alt="" />
+            </div>
+            <!-- description-user -->
+            <div class="user-chat-description flex column flex-vertical-center">
+              <h4>Michele</h4>
+              <p>Ultimo accesso oggi alle 16:26</p>
+            </div>
+            <!-- icons -->
+            <div class="action-icons">
+              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+              <a href=""><i class="fa-solid fa-paperclip"></i></a>
+              <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </div>
+          </div>
+          <!-- messagges -->
+          <div class="messages flex">
+            <div class="row flex right">
+              <div class="self-message flex">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                  quidem accusantium cupiditate, dolores deserunt doloremque fuga
+                  assumenda. Dicta eos voluptatum et nesciunt maxime aspernatur
+                  corporis aliquam expedita. Eaque, quis vel. Excepturi in amet
+                  sed dolorem impedit consectetur! Ea iure amet similique
+                  quibusdam rem accusamus aperiam eaque consequatur ullam harum
+                  saepe, aspernatur temporibus soluta aut dolorum? Velit dolorem
+                  provident ullam vel. Nobis iure similique blanditiis, a nihil
+                  vitae sunt aspernatur deleniti totam delectus eveniet dolorem?
+                  Quos voluptas, dolores quas nostrum voluptates molestias fuga
+                  quo, ex ab reprehenderit saepe odio perferendis placeat!
+                </p>
+                <div class="info-message flex">
+                  <div class="chevron">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="menu">
+                      <p>Info messaggio</p>
+                      <p>Cancella messaggio</p>
+                    </div>
+                  </div>
+                  <span>16:26</span>
+                </div>
+              </div>
+            </div>
+            <div class="row flex right">
+              <div class="self-message flex">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                  quidem accusantium cupiditate, dolores deserunt doloremque fuga
+                  assumenda. Dicta eos voluptatum et nesciunt maxime aspernatur
+                  corporis aliquam expedita. Eaque, quis vel.
+                </p>
+                <div class="info-message flex">
+                  <div class="chevron">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="menu">
+                      <p>Info messaggio</p>
+                      <p>Cancella messaggio</p>
+                    </div>
+                  </div>
+                  <span>16:27</span>
+                </div>
+              </div>
+            </div>
+            <div class="row flex left">
+              <div class="user-message flex">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+                  quidem accusantium cupiditate, dolores deserunt doloremque fuga
+                  assumenda. Dicta eos voluptatum et nesciunt maxime aspernatur
+                  corporis aliquam expedita. Eaque, quis vel. Excepturi in amet
+                  sed dolorem impedit consectetur! Ea iure amet similique
+                  quibusdam rem accusamus aperiam eaque consequatur ullam harum
+                  saepe, aspernatur temporibus soluta aut dolorum? Velit dolorem
+                  provident ullam vel. Nobis iure similique blanditiis, a nihil
+                  vitae sunt aspernatur deleniti totam delectus eveniet dolorem?
+                  Quos voluptas, dolores quas nostrum voluptates molestias fuga
+                  quo, ex ab reprehenderit saepe odio perferendis placeat!
+                </p>
+                <div class="info-message flex">
+                  <div class="chevron">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="menu">
+                      <p>Info messaggio</p>
+                      <p>Cancella messaggio</p>
+                    </div>
+                  </div>
+                  <span>16:43</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- action-bar -->
+          <div class="action-bar flex">
+            <div class="lateral action-icons">
+              <a href=""><i class="fa-regular fa-face-smile"></i></a>
+            </div>
+            <input type="text" placeholder="Scrivi un messaggio" />
+            <div class="lateral action-icons">
+              <a href=""><i class="fa-solid fa-microphone"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- right container -->
+      </div>
+      <!-- /WebApp -->
+    </div>
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/84174ae206.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

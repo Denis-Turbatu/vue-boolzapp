@@ -1,0 +1,143 @@
+/* Web-App */
+
+.webapp-container{
+    height: 100vh;
+    width: 100%;
+}
+
+/* Left-Container */
+
+.left-container{
+    display: none;
+    width: 100px;
+    height: 100%;
+}
+
+.user-settings,
+.user-action,
+.notifications,
+.search-bar,
+.contacts,
+.contact-message {
+    display: none;
+}
+
+/* Right-Container */
+
+.right-container {
+    width: 100%;
+    height: 100vh;
+}
+
+/* top-part */
+
+.chat-user{
+    background-color: #f3eeea;
+    padding: 5px;
+    height: 60px;
+}
+
+.chat-img {
+    text-align: center;
+}
+
+.chat-img img {
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.user{
+    width: 20%;
+    max-width: 150px;
+}
+
+.user-chat-description {
+    flex-grow: 1;
+}
+
+.user-chat-description h4 {
+    font-weight: 400;
+}
+
+.user-chat-description p {
+    font-size: 1.2rem;
+    color: #6b7376;
+} 
+
+.action-icons{
+    display: none;
+}
+
+/* middle-part */
+
+.messages{
+    height: calc(100% - 130px);
+    background-image: url(../img/mine.jpg);
+    overflow-y: scroll;
+    flex-direction: column;
+}
+.left {
+    justify-content: start;
+}
+.right {
+    justify-content: end;
+}
+.row div p {
+    margin: 20px 30px;
+}
+.messages .row .user-message,
+.messages .row .self-message{
+    margin: 20px;
+    width: 70%;
+    border-radius: 10px;
+}
+.messages .self-message {
+    align-items: end;
+    background-color: lightgreen;
+}
+.messages .user-message {
+    align-items: start;
+    background-color: lightgoldenrodyellow;
+}
+.row div .info-message{
+    width: 10%;
+    height: 100%;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.chevron{
+    position: relative;
+}
+.menu{
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.chevron:hover .menu{
+    display: block;
+}
+
+
+
+
+
+/* bottom-part */
+
+.action-bar{
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+    background-color: #f3eeea;
+}
+
+.action-bar input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}

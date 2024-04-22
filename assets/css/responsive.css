@@ -1,0 +1,208 @@
+@media screen and (min-width: 768px) {
+    /* WEBAPP */
+
+    /* LEFT-CONTAINER */
+    .left-container{
+        display: block;
+    }
+    .user-settings {
+        display: block;
+        border-right: solid  1px #d8d8d8;
+        background-color: #f3eeea;
+        height: 80px;
+    }
+    .user-settings .user-actions{
+        display: none;
+    }
+    .user-settings .chat-img img{
+        max-width: 80px;
+        padding: 10px;
+    }
+    .chat-img img {
+        max-width: 70px;
+        padding: 5px;
+    } 
+    .contacts{
+        display: block;
+        overflow-y: scroll;
+        max-height: calc(100% - 80px);  
+    }
+    .contact{
+        height: 105px;
+        padding: 15px 2px;
+        border-bottom: solid 1px #d8d8d8;
+    }
+    /* RIGHT-CONTAINER */
+    /* Chat-user */
+    .chat-user{
+        height: 80px;
+    }
+    .user-chat-description h4 {
+        font-size: 2rem;
+    }
+    .user-chat-description p {
+        font-size: 1.4rem;
+    }
+    .action-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        max-width: 200px;
+    }
+    .chat-user .action-icons{
+        width: 30%;
+        gap: 40px
+    }
+    .action-icons a {
+        color: #6b7376;
+    }
+    .right-container .action-bar .action-icons{
+        flex-grow: 1;
+    }
+    /* Messages */
+    .messages{
+        height: calc(100% - 150px);
+    }
+    /* Action-bar */
+    .action-bar input{
+        width: 80%;
+    }
+    .action-bar .lateral-action-icon{
+        flex-grow: 1;
+    }
+    .action-bar input::placeholder{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    /* BODY */
+    body{
+        background-image: linear-gradient(to bottom, #009688, #009688 150px, #eee 150px, white 100%);
+    }
+    
+    /* WEBAPP */
+    .webapp-container{
+        width: 90%;
+        height: 100vh;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    /* Left-Container */
+    .left-container {
+        width: 30%;
+        height: 90vh;
+    }
+
+    /* user-container */
+    .user-settings{
+        height: 80px;
+    }
+    .user-settings .user-actions{
+        display: flex;
+        width: 80%;
+        gap: 20px;
+        justify-content: end;
+        padding-right: 10px;
+    }
+
+    /* notifications */
+    .notifications {
+        display: flex;
+        background-color: #8edafc;
+        height: 75px;
+        align-items: center;
+        justify-content: left;
+    }
+    .circle-notification{
+        width: 55px;
+        height: 55px;
+        margin-inline: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 2rem;
+        color: #8edafc;
+        background-color: white
+    }
+    .active-notification h4{
+        font-size: 1.4rem;
+    }
+    .active-notification a{
+        font-size: 1.3rem;
+        color: #6b7376;
+    }
+
+
+    /* search-bar */
+    .search-bar {
+        display: flex;
+    background-color: #f3eeea;
+    height: 60px;
+    }
+    .search-bar .search-icon{
+        width: 20%;
+        border-radius: 10px 0 0 10px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #6b7376;
+    }
+    .search-bar input{
+        border-radius: 0 10px 10px 0;
+    }
+    .search-bar input::placeholder{
+        font-size: 1.3rem;
+    }
+
+    /* contacts */
+    .contacts{
+        overflow-y: scroll;
+        max-height: calc(100% - 215px);
+    }
+    .contact{
+        align-items: center;
+    }
+    .contact:hover{
+        background-color: #d8d8d8;
+    }
+    .contact-message{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        padding: 5px;
+    }
+    .contact-message .top-message{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-message span{
+        display: inline-block;
+    }
+    .contact-message span:first-child{
+        text-align: left;
+        font-size: 2rem;
+    }
+    .contact-message span:last-child{
+        text-align: right;
+    }
+    .contact-message p{
+        text-align: left;
+    }
+    .contact-message span:last-child, .contact-message p{
+        color: #6b7376;
+        font-size: 1.2rem;
+    }
+
+    /* right-container */
+    .right-container{
+        height: 90vh;
+    }
+    .chat-user {
+        height: 80px;
+    }
+}

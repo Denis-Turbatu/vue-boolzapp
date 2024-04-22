@@ -1,0 +1,36 @@
+/* ROOT */
+
+:root{
+    font-size: 62.5%;
+}
+
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* UTILITY */
+
+.flex{
+    display: flex;
+}
+
+.flex-vertical-center{
+    justify-content: center;
+}
+
+.column{
+    flex-direction: column;
+}
