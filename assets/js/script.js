@@ -171,9 +171,32 @@ createApp({
             chatActive: 0,
         };
     },
+    computed: {
+        classRowRight() { 
+            return (messaggio) => {
+                if (messaggio.status !== "sent") {
+                    return "right";
+                } else {
+                    return "left";
+                }
+            };
+        },
+        classSelfMessage() { 
+            return (messaggio) => {
+                if (messaggio.status !== 'sent') {
+                    return 'self-message';
+                } else {
+                    return 'user-message';
+                }
+            };
+        },
+    },
     methods: {
         selectedChat: function(curContact, index){
             this.chatActive = index;
+        },
+        messageReceived: function(j) {
+            return true;
         },
     },
 }).mount('#app');

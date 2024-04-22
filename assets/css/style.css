@@ -83,7 +83,7 @@
     justify-content: end;
 }
 .row div p {
-    margin: 20px 30px;
+    margin: 30px 30px;
 }
 .messages .row .user-message,
 .messages .row .self-message{
