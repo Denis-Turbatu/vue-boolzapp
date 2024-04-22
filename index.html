@@ -223,12 +223,13 @@
                 </div>
               </div>
             </div> -->
-            <div class="row flex left">
+            <div 
+              class="row flex left"
+              v-for="(curMessage, j) in contacts[chatActive].messages"
+            >
               <div class="user-message flex">
-                <p
-                  v-for="(curMessage, index) in messages"
-                >
-                  {{ contacts[0].messages[0].message }}
+                <p>
+                  {{ contacts[chatActive].messages[j].message }}
                 </p>
                 <div class="info-message flex">
                   <div class="chevron">

@@ -88,7 +88,7 @@
 .messages .row .user-message,
 .messages .row .self-message{
     margin: 20px;
-    width: 70%;
+    max-width: 70%;
     border-radius: 10px;
 }
 .messages .self-message {

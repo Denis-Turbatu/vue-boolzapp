@@ -23,7 +23,8 @@ Visualizzazione dinamica dei messaggi: tramite la direttiva v-for, visualizzare 
 - [X] Eseguire un v-for per ogni contatto e estrarre l'oggetto corrente con indice
 - [X] Stampare dentro gli oggetti i dati corretti attraerso l'indice e la corretta estrapolazione dei dati dalla struttura dati
 > Milestone 2
+- [X] Creare nuovo v-for per iterare l'array messages e poi estrarre ogni messaggio per ogni contatto
 - [X] Stampare nome e immagine profilo dell'utente selezionato nella chat
-- [] Stampare messaggi dell'utente selezionato nella chat
+- [X] Stampare messaggi dell'utente selezionato nella chat
 
 ### OUTPUT
