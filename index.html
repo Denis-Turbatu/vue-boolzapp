@@ -56,11 +56,15 @@
           </div>
           <!-- contacts -->
           <div class="contacts">
-            <div class="contact chat-img flex flex-vertical-center">
-              <img draggable="false" src="./assets/img/avatar_1.jpg" alt="" />
+            <div class="contact chat-img flex flex-vertical-center" v-for="(curContact, index) in contacts">
+              <img 
+                draggable="false" 
+                alt="" 
+                :src="`./assets/img/avatar${contacts[index].imgProfilo}.jpg`" 
+              />
               <div class="contact-message">
                 <div class="top-message">
-                  <span>Michele</span>
+                  <span>  {{ contacts[index].nome }} </span>
                   <span>16:26</span>
                 </div>
                 <p>Lorem ipsum dolor sit amet</p>
