@@ -12,12 +12,12 @@ Visualizzazione dinamica dei messaggi: tramite la direttiva v-for, visualizzare 
 
 ### INPUT
 > Milestone 1
-- [] Creare la struttura dati con i contatti 
-- [] Avere il codice HTML per un singolo contattato sul quale verrà applicato il v-for
+- [X] Creare la struttura dati con i contatti 
+- [X] Avere il codice HTML per un singolo contattato sul quale verrà applicato il v-for
 
 ### LOGICA
 > Milestone 1
-- [] Eseguire un v-for per ogni contatto e estrarre l'oggetto corrente con indice
-- [] Stampare dentro gli oggetti i dati corretti attraerso l'indice e la corretta estrapolazione dei dati dalla struttura dati
+- [X] Eseguire un v-for per ogni contatto e estrarre l'oggetto corrente con indice
+- [X] Stampare dentro gli oggetti i dati corretti attraerso l'indice e la corretta estrapolazione dei dati dalla struttura dati
 
 ### OUTPUT
