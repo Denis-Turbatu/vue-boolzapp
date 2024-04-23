@@ -51,7 +51,11 @@
             <div class="search-icon">
               <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </div>
-            <input type="text" placeholder="Cerca o inzia una nuova chat" />
+            <input 
+              type="text" 
+              placeholder="Cerca o inzia una nuova chat" 
+              @keyup="searchContact"
+            />
           </div>
           <!-- contacts -->
           <div class="contacts">
@@ -244,7 +248,7 @@
                     <i class="fa-solid fa-chevron-down"></i>
                     <div class="menu">
                       <p>Info messaggio</p>
-                      <p>Cancella messaggio</p>
+                      <p @click="deleteMessage">Cancella messaggio</p>
                     </div>
                   </div>
                   <span>{{ contacts[chatActive].messages[j].date }}</span>

@@ -195,6 +195,12 @@ createApp({
                 }
             };
         },
+        searchContact: function(event,curContact, index){
+            console.log(event.key);
+            this.filteredContacts = this.contacts;
+            console.log(this.filteredContacts);
+            console.log(this.filteredContacts[this.chatActive].name);
+        },
     },
     methods: {
         selectedChat: function(curContact, index){
@@ -223,8 +229,5 @@ createApp({
             console.log(this.contacts[this.chatActive].messages);
             const myTimeout = setTimeout(this.responseMessage, 1000);
         },
-        searchContact: function(){
-            
-        }
     },
 }).mount('#app');
