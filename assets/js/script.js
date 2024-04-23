@@ -203,6 +203,15 @@ createApp({
         messageReceived: function(j) {
             return true;
         },
+        responseMessage: function(){
+            const response = {
+                date: new Date().toLocaleString(),
+                message: "Ok!",
+                status: "received"
+            };
+            console.log(response);
+            this.contacts[this.chatActive].messages.push(response);
+        },
         writeMessage: function(inputMessage){
             console.log(inputMessage);
             const newMessage = {
@@ -212,6 +221,7 @@ createApp({
             };
             this.contacts[this.chatActive].messages.push(newMessage);
             console.log(this.contacts[this.chatActive].messages);
+            const myTimeout = setTimeout(this.responseMessage, 1000);
         },
     },
 }).mount('#app');
