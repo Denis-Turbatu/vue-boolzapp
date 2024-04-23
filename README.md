@@ -20,6 +20,8 @@ Visualizzazione dinamica dei messaggi: tramite la direttiva v-for, visualizzare 
 > Milestone 3
 - [X] L'utente inserisce un messaggio nell'input e potrà usare il tasto Enter per inviare i dati
 > Milestone 4
+- [] Impostare l'input di ricerca per stare in ascolto sui nomi dei contatti
+> Milestone 5
 - [] 
 
 
@@ -38,7 +40,13 @@ Visualizzazione dinamica dei messaggi: tramite la direttiva v-for, visualizzare 
 - [X] Impostare un Timeout di 1000ms in cui verrà creato un oggetto con messaggio = "ok"
 - [X] Assegnazione classi dinamiche al messaggio di risposta
 > Milestone 4
+- [] Creare un funzione searchContact
+- [] Nella funzione fare il controllo tra input utente e nome contatti esistenti
+- [] Impostare nel tag input un eventLister ogni volta che un tasto viene rilasciato, per fare il confronto ogni volta con la nuova parola chiave
+> Milestone 5
 - [] 
-
+- [] 
+- [] 
+- [] 
 
 ### OUTPUT

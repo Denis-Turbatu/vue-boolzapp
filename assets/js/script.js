@@ -223,5 +223,8 @@ createApp({
             console.log(this.contacts[this.chatActive].messages);
             const myTimeout = setTimeout(this.responseMessage, 1000);
         },
+        searchContact: function(){
+            
+        }
     },
 }).mount('#app');
