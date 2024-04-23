@@ -255,7 +255,11 @@
             <div class="lateral action-icons">
               <a href=""><i class="fa-regular fa-face-smile"></i></a>
             </div>
-            <input type="text" placeholder="Scrivi un messaggio" />
+            <input
+              type="text"  
+              placeholder="Scrivi un messaggio" 
+              @keyup.enter="writeMessage"  
+            />
             <div class="lateral action-icons">
               <a href=""><i class="fa-solid fa-microphone"></i></a>
             </div>

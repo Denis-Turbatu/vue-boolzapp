@@ -18,7 +18,7 @@ Visualizzazione dinamica dei messaggi: tramite la direttiva v-for, visualizzare 
 - [X] Aggiornare la struttura dati con i messaggi che ogni utente può inviare a noi
 - [X] Creare una variabile per salvare l'indice dell'utente attivo
 > Milestone 3
-- [] L'utente inserisce un messaggio nell'input e potrà usare il tasto Enter per inviare i dati
+- [X] L'utente inserisce un messaggio nell'input e potrà usare il tasto Enter per inviare i dati
 > Milestone 4
 - [] 
 
