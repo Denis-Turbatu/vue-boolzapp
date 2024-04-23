@@ -32,7 +32,7 @@ Visualizzazione dinamica dei messaggi: tramite la direttiva v-for, visualizzare 
 - [X] Stampare nome e immagine profilo dell'utente selezionato nella chat
 - [X] Stampare messaggi dell'utente selezionato nella chat
 > Milestone 3
-- [] Creare una funzione per creare un oggetto avente il messaggio inserito nell'input 
+- [X] Creare una funzione per creare un oggetto avente il messaggio inserito nell'input 
 - [] Assegnazione delle classi dinamiche
 - [] Funzione richiamata nella funzione precedente dove lanciamo un setTimeout
 - [] Impostare un Timeout di 1000ms in cui verrà creato un oggetto con messaggio = "ok"

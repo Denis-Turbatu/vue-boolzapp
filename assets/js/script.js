@@ -1,3 +1,8 @@
+// PROVA LUXON
+// const dt = luxon.DateTime;
+// const now = dt.now();
+// console.log(now.setLocale("it").toLocaleString(dt.DATETIME_SHORT_WITH_SECONDS));
+
 console.log(Vue);
 
 const { createApp } = Vue;
@@ -198,8 +203,15 @@ createApp({
         messageReceived: function(j) {
             return true;
         },
-        writeMessage: function(){
-            
+        writeMessage: function(inputMessage){
+            console.log(inputMessage);
+            const newMessage = {
+                date: new Date().toLocaleString(),
+                message: inputMessage,
+                status: 'sent',
+            };
+            this.contacts[this.chatActive].messages.push(newMessage);
+            console.log(this.contacts[this.chatActive].messages);
         },
     },
 }).mount('#app');
