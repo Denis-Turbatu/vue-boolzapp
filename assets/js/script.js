@@ -196,10 +196,10 @@ createApp({
             };
         },
         searchContact: function(event,curContact, index){
-            console.log(event.key);
-            this.filteredContacts = this.contacts;
-            console.log(this.filteredContacts);
-            console.log(this.filteredContacts[this.chatActive].name);
+            // console.log(event.key);
+            // this.filteredContacts = this.contacts;
+            // console.log(this.filteredContacts);
+            // console.log(this.filteredContacts[this.chatActive].name);
         },
     },
     methods: {
@@ -228,6 +228,9 @@ createApp({
             this.contacts[this.chatActive].messages.push(newMessage);
             console.log(this.contacts[this.chatActive].messages);
             const myTimeout = setTimeout(this.responseMessage, 1000);
+        },
+        deleteMessage: function(curMessage, index){
+            this.contacts[this.chatActive].messages.splice(index, 1);
         },
     },
 }).mount('#app');

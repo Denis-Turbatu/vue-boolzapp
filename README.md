@@ -44,8 +44,8 @@ Visualizzazione dinamica dei messaggi: tramite la direttiva v-for, visualizzare 
 - [] Nella funzione fare il controllo tra input utente e nome contatti esistenti
 - [] Impostare nel tag input un eventLister ogni volta che un tasto viene rilasciato, per fare il confronto ogni volta con la nuova parola chiave
 > Milestone 5
-- [] Creare un funzione deleteMessage
-- [] nella funzione si estrae l'indice del messaggio corrente
-- [] attraverso l'indice si effettua uno splice
+- [X] Creare un funzione deleteMessage
+- [X] nella funzione si estrae l'indice del messaggio corrente
+- [X] attraverso l'indice si effettua uno splice
 
 ### OUTPUT

@@ -248,7 +248,7 @@
                     <i class="fa-solid fa-chevron-down"></i>
                     <div class="menu">
                       <p>Info messaggio</p>
-                      <p @click="deleteMessage">Cancella messaggio</p>
+                      <p @click="deleteMessage(curMessage, j)">Cancella messaggio</p>
                     </div>
                   </div>
                   <span>{{ contacts[chatActive].messages[j].date }}</span>
