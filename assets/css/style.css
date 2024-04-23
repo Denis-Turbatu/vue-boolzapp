@@ -83,12 +83,16 @@
     justify-content: end;
 }
 .row div p {
+    width: 60%;
     margin: 30px 30px;
 }
 .messages .row .user-message,
 .messages .row .self-message{
     margin: 20px;
     max-width: 70%;
+    min-width: 400px;
+    min-height: 150px;
+    align-items: start;
     border-radius: 10px;
 }
 .messages .self-message {
@@ -100,15 +104,19 @@
     background-color: lightgoldenrodyellow;
 }
 .row div .info-message{
-    width: 10%;
+    width: 40%;
     height: 100%;
     padding: 10px;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
 }
 .chevron{
     position: relative;
+}
+
+.info-message span{
+    font-size: 1.2rem;
 }
 .menu{
     background-color: #fff;

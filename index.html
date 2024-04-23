@@ -68,9 +68,11 @@
               <div class="contact-message">
                 <div class="top-message">
                   <span>  {{ contacts[index].name }} </span>
-                  <span>16:26</span>
+                  <span v-if="contacts[index].messages.length > 0"> {{ contacts[index].messages[contacts[index].messages.length - 1].date }} </span>
                 </div>
-                <p>Lorem ipsum dolor sit amet</p>
+                <p v-if="contacts[index].messages.length > 0">
+                  {{ contacts[index].messages[contacts[index].messages.length - 1].message }}
+                </p>
               </div>
             </div>
 
@@ -245,7 +247,7 @@
                       <p>Cancella messaggio</p>
                     </div>
                   </div>
-                  <span>16:43</span>
+                  <span>{{ contacts[chatActive].messages[j].date }}</span>
                 </div>
               </div>
             </div>
