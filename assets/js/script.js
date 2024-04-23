@@ -175,18 +175,18 @@ createApp({
         classRowRight() { 
             return (messaggio) => {
                 if (messaggio.status !== "sent") {
-                    return "right";
-                } else {
                     return "left";
+                } else {
+                    return "right";
                 }
             };
         },
         classSelfMessage() { 
             return (messaggio) => {
                 if (messaggio.status !== 'sent') {
-                    return 'self-message';
+                    return "user-message";
                 } else {
-                    return 'user-message';
+                    return "self-message";
                 }
             };
         },
@@ -197,6 +197,9 @@ createApp({
         },
         messageReceived: function(j) {
             return true;
+        },
+        writeMessage: function(){
+            
         },
     },
 }).mount('#app');
