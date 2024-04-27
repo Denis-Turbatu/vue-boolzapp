@@ -54,7 +54,8 @@
             <input 
               type="text" 
               placeholder="Cerca o inzia una nuova chat" 
-              @keyup="searchContact"
+              v-model="search"
+              @keyup="filteredContact()"
             />
           </div>
           <!-- contacts -->
@@ -62,7 +63,8 @@
             <div 
               class="contact chat-img flex flex-vertical-center" 
               v-for="(curContact, index) in contacts"
-              @click="selectedChat(curContact, index)"
+              @click="selectedChat(curContact, index)" 
+              v-show="filteredContact(curContact)"
             >
               <img 
                 draggable="false" 
@@ -79,8 +81,6 @@
                 </p>
               </div>
             </div>
-
-
             <!-- <div class="contact chat-img flex flex-vertical-center">
               <img draggable="false" src="./assets/img/avatar_2.jpg" alt="" />
               <div class="contact-message">

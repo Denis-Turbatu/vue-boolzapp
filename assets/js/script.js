@@ -174,6 +174,7 @@ createApp({
                 }
             ],
             chatActive: 0,
+            search: "",
         };
     },
     computed: {
@@ -194,12 +195,6 @@ createApp({
                     return "self-message";
                 }
             };
-        },
-        searchContact: function(event,curContact, index){
-            // console.log(event.key);
-            // this.filteredContacts = this.contacts;
-            // console.log(this.filteredContacts);
-            // console.log(this.filteredContacts[this.chatActive].name);
         },
     },
     methods: {
@@ -231,6 +226,9 @@ createApp({
         },
         deleteMessage: function(curMessage, index){
             this.contacts[this.chatActive].messages.splice(index, 1);
+        },
+        filteredContact: function(curContact) {
+            return curContact.name.toLowerCase().includes(this.search.toLowerCase());
         },
     },
 }).mount('#app');
