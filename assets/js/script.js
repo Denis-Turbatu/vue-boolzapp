@@ -174,6 +174,7 @@ createApp({
                 }
             ],
             chatActive: 0,
+            reponse: 0,
             search: "",
         };
     },
@@ -204,14 +205,14 @@ createApp({
         messageReceived: function(j) {
             return true;
         },
-        responseMessage: function(){
+        responseMessage: function(responseIndex){
             const response = {
                 date: new Date().toLocaleString(),
                 message: "Ok!",
                 status: "received"
             };
-            console.log(response);
-            this.contacts[this.chatActive].messages.push(response);
+            console.log(this.response, "risposta");
+            this.contacts[this.response].messages.push(response);
         },
         writeMessage: function(inputMessage){
             console.log(inputMessage);
@@ -221,8 +222,10 @@ createApp({
                 status: 'sent',
             };
             this.contacts[this.chatActive].messages.push(newMessage);
-            console.log(this.contacts[this.chatActive].messages);
-            const myTimeout = setTimeout(this.responseMessage, 1000);
+            // console.log(this.contacts[this.chatActive].messages);
+            response = this.chatActive;
+            console.log(response);
+            const myTimeout = setTimeout(this.responseMessage, 2000);
         },
         deleteMessage: function(curMessage, index){
             this.contacts[this.chatActive].messages.splice(index, 1);
